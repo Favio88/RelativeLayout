@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RelativeLayout</string>
+    <string name="conectar">Conectar</string>
+    <string name="correo">Correo</string>
+    <string name="pwd1">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="pwd2">¿Olvidaste tu contraseña?</string>
+
+</resources>

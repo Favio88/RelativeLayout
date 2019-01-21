@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/conectar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:text="@string/conectar"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@id/header"
+
+        android:background="#EEEEDD"
+>
+
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="150dp"
+            android:background="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:hint="@string/correo"/>
+
+        <EditText
+            android:id="@+id/pwd1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/correo"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="80dp"
+            android:background="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:hint="@string/pwd1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body"
+
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/btn_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="7dp"
+            android:text="@string/iniciar_sesion"/>
+
+        <TextView
+            android:id="@+id/pw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_iniciar"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/pwd2"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+
+    <!--
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click2"
+        android:layout_below="@id/btn1"
+        android:layout_alignParentRight="true" />
+
+     -->
+
+
+
+    <!--
+    <EditText
+        android:id="@+id/input_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Nombres"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/input_apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/input_nombre"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/texto_estado_civil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/input_apellido"
+        android:layout_marginRight="48dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:text="Estado civil"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner_estado_civil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/texto_estado_civil"
+        android:layout_toLeftOf="@+id/spinner_cargo"
+        android:entries="@array/lista_estado_civil" />
+
+    <TextView
+        android:id="@+id/texto_cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_apellido"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/texto_estado_civil"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:text="Cargo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner_cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_cargo"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/texto_cargo"
+        android:layout_below="@+id/texto_cargo"
+        android:entries="@array/lista_cargo" />
+
+        -->
+
+</RelativeLayout>
